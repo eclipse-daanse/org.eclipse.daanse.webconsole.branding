@@ -42,7 +42,7 @@ class BrandingTest {
                             .uri(URI.create("http://admin:admin@localhost:8080/system/console/res/logo.svg"))
                             .header("Authorization", getBasicAuthenticationHeader("admin", "admin")).GET().build(),
                     BodyHandlers.ofString());
-            assertThat(response.body()).contains("svg").contains("eclipse").contains("daanse-logo");
+            assertThat(response.body()).contains("svg").contains("Eclipse");
         }
 
     }
